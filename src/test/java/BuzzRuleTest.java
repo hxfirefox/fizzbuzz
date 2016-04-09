@@ -21,4 +21,14 @@ public class BuzzRuleTest {
         // then
         assertThat(result, is("Buzz"));
     }
+
+    @Test
+    public void should_out_empty_when_number_is_not_multiples_of_five() throws Exception {
+        // given
+
+        // when
+        final String result = rule.transform(1);
+        // then
+        assertThat(result, is(""));
+    }
 }
