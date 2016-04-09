@@ -21,4 +21,14 @@ public class FizzRuleTest {
         // then
         assertThat(result, is("Fizz"));
     }
+
+    @Test
+    public void should_out_nothing_when_number_is_not_multiples_of_three() throws Exception {
+        // given
+
+        // when
+        final String result = rule.transform(4);
+        // then
+        assertThat(result, is(""));
+    }
 }
